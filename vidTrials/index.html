@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Backbone JS</title>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+
+
+    <script src="./models/User.js"></script>
+    <script src="./views/singleUserView.js"></script>
+    <script src="./views/userCollectionView.js"></script>
+    <script src="./collections/UserCollection.js"></script>
+    <script src="./app.js"></script>
+
+    <form class= "form-group" id="trialForm">
+      <label>Username:</label><input type= "text" id="username" />
+      <label>Email:</label><input type= "text" id="email" />
+      <button type="submit"> Submit </button>
+    </form>
+    <hr>
+
+    <script type= "text/template" id = "user-details-template">
+      <span class= "registered-names"><%= name %></span>
+      <button class= "edit"> Edit Details </button>
+      <button class="delete"> Delete User </button>
+    </script>
+
+    <div id = "userList"></div>
+
+  </body>
+</html>
